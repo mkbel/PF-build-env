@@ -96,6 +96,22 @@ SECTIONS
     *(.trampolines)
      *(.trampolines*)
      __trampolines_end = . ;
+
+     __loc_sec_start = . ;
+    *(.loc_sec)
+    KEEP(*(.loc_sec))
+     __loc_sec_end = . ;
+
+     __loc_pri_start = . ;
+    *(.loc_pri)
+    KEEP(*(.loc_pri))
+     __loc_pri_end = . ;
+
+     __noloc_start = . ;
+    *(.noloc)
+    KEEP(*(.noloc))
+     __noloc_end = . ;
+     
     /* avr-libc expects these data to reside in lower 64K. */
      *libprintf_flt.a:*(.progmem.data)
      *libc.a:*(.progmem.data)
