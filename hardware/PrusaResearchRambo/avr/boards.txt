@@ -13,7 +13,7 @@ rambo.pid.0=0x0001
 
 rambo.upload.tool=arduino:avrdude
 rambo.upload.protocol=wiring
-rambo.upload.maximum_size=258048
+rambo.upload.maximum_size=253952
 rambo.upload.speed=115200
 
 rambo.bootloader.low_fuses=0xFF
